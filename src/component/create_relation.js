@@ -14,11 +14,7 @@ const Create = (props) => {
     const submit = (data) => {
         return Axios.post("/family", data)
             .then(async (res) => {
-                let data = await res.data['data'];
-                data =  data.filter((x) => x.image_url)
-                data.sort(() => .5 - Math.random());
-                setUserArray(data)
-                window.alert('Family successfully created')
+                window.alert('Family successfully created');
             })
             .catch((err) => {
                 return
