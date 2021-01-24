@@ -142,7 +142,6 @@ const Create = (props) => {
                                 onClick={
                                     async (e) => {
                                         e.preventDefault();
-                                        console.log(arrayData, "ARRA");
                                         await submit(arrayData)
                                     }
                                 }
